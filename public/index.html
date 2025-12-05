@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marketing Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+        background-color: #f0f4f9;
+      font-family: "Lato", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    #contact-me form {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    #contact-me .form-row {
+      display: flex;
+      gap: 15px;
+    }
+    #contact-me .form-row input {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #contact-me textarea {
+      font-size: 16px;
+      font-family: "Lato", sans-serif;
+      color: #333;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    #contact-me button {
+      width: 150px;
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+    #contact-me button:hover {
+      background-color: #2980b9;
+    }
+    nav a {
+      margin-left: 15px;
+      padding: 6px 12px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1, h2, p {
+      margin: 0 0 15px 0;
+    }
+    section#about-me p {
+      margin-bottom: 10px;
+    }
+    section#about-me {
+      max-width: 600px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    section#case-studies {
+      background-color: #f8f8f8;
+      padding: 40px 0;
+    }
+    section#case-studies .container {
+      max-width: 900px;
+    }
+    .case-study-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .case-study {
+      flex: 1;
+      text-align: center;
+    }
+    .case-study img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .testimonial {
+      max-width: 900px;
+      margin: 50px auto 0 auto;
+      text-align: center;
+      font-style: italic;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .testimonial p {
+      margin-top: 15px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 style="margin: 0; font-size: 16px;">Hei Chit Xavier: E-Portfolio</h1>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/Projects.html">Past-works</a>
+      <a href="/Contact-me.html">About Me</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <img src="/images/your-photo.jpg" alt="your photo" 
+         style="display: block; margin: 30px auto; width: 200px; height: auto; border-radius: 8px;" />
+    <p style="max-width: 600px; margin: 0 auto 40px auto; text-align: center;">
+      Hi, I'm Xavier - a digital marketing and public relations specialist. I help design data-driven campaigns to boost company revenue, as well as handling all outward-facing materials, from email outreach to newsletters and social media posts.
+    </p>
+  </div>
+  <section id="case-studies" style="background-color: #f6f9fa; padding: 40px 0;">
+    <div class="container" style="max-width: 900px; margin: 0 auto;"
+  <section id="about-me">
+    <h2 style="max-width: 600px; margin: 0 auto 40px auto; text-align: center;">About Me</h2>
+    <p style="max-width: 600px; margin: 0 auto 40px auto; text-align: center;">
+      As a Sociology graduate, I am interested in how various social actors interact and play their part in a societal system, particularly how factors like community, education, ethnic background, and culture all play a role in influencing one's belief and value viewpoints. This, coupled with my experience with my years of marketing-related work, has provided me with great insight into what people like to see and how to best engage people of varying backgrounds or beliefs.
+    </p>
+    <p style="max-width: 600px; margin: 0 auto 40px auto; text-align: center;">
+      I am experienced in utilising tools like Google Ads and Google Analytics to analyse and create campaigns. I have also led initiatives to maintain professional relations with sponsors, stakeholders, and collaborators, as well as supported outreach programs for potential sponsorships and business opportunities.
+    </p>
+  </section>
+
+  <section id="case-studies">
+    <div class="container">
+      <div class="case-study-row">
+        <div class="case-study">
+          <a href="/case-study/1">
+            <img src="/images/uat-logo.jpg" alt="Case Study 1" />
+          </a>
+          <h2 style="font-size: 16px;">Creating tech graphics and writing case studies</h2>
+        </div>
+
+        <div class="case-study">
+          <a href="/case-study/2">
+            <img src="/images/google-ads-logo.jpg" alt="Case Study 2" />
+          </a>
+          <h2 style="font-size: 16px;">Analysing and utilising data to drive marketing initiatives</h2>
+        </div>
+
+        <div class="case-study">
+          <a href="/case-study/3">
+            <img src="/images/hksa-logo.jpg" alt="Case Study 3" />
+          </a>
+          <h2 style="font-size: 16px;">Event planning and public  relations</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="testimonial">
+    <h2>"Xavier demonstrated his great initiative to learn ... delivered valuable outcomes which cover write-up of project case studies, design and preparation of e-brochure layouts, video-shooting and photo-shooting for marketing collaterals preparation, and review of company's website for improvement ideas."</h2>
+    <p>- Linda Fok, Marketing Manager, Ultra Active Technology Limited</p>
+  </div>
+
+  <section id="contact-me">
+    <div class="container">
+      <h2>Let's Chat!</h2>
+      <form action="/contact" method="POST">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <textarea name="description" placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
