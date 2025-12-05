@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const PORT = 4000;
+const nodemailer = require('nodemailer');
 
 // Middleware to parse form data
 app.use(express.urlencoded({ extended: true }));
@@ -20,6 +21,22 @@ app.get('/case-study/:id', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'case-study-' + id + '.html'));
 });
 
+app.post('/contact', (req, res) => {
+  const { name, email, description } = req.body;
+  console.log('Contact form submitted:', { name, email, description });
+
+  const mailOptions = {
+    from: email,                          // sender address (user's email)
+    to: xavi9664@gmail.com,               // your email address (receiver)
+    subject: `New message from ${name}`,
+    text: `You received a new message:\n\nName: ${name}\nEmail: ${email}\nMessage:\n${description}`,
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error('Error sending email:', error);
+      return res.status(500).send('Error sending email. Please try again later.');
+    }
 
 // Handle contact form submission
 app.post('/contact', (req, res) => {
