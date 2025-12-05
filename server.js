@@ -20,6 +20,14 @@ app.get('/case-study/:id', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'case-study-' + id + '.html'));
 });
 
+// Email options
+let mailOptions = {
+  from: email,
+  to: xavi9664@gmail.com,           
+  subject: `New message from ${name}`,
+  text: message,
+};
+
 // Handle contact form submission
 app.post('/contact', (req, res) => {
   const { name, email, description } = req.body;
