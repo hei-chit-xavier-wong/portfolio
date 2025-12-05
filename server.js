@@ -32,22 +32,7 @@ let mailOptions = {
 app.post('/contact', (req, res) => {
   const { name, email, description } = req.body;
   console.log('Contact form submitted:', { name, email, description });
-
-  res.send(`
-    <h1>Thank you for contacting me!</h1>
-    <p>I will get back to you soon. Feel free to also reach out to me on LinkedIn as well.</p>
-    <a href="/" style="
-      display: inline-block; 
-      margin-top: 20px; 
-      padding: 10px 20px; 
-      background-color: #007bff; 
-      color: white; 
-      text-decoration: none; 
-      border-radius: 5px;
-    ">
-      Return to Home Page
-    </a>
-  `);
+  res.send('Thank you for contacting me! I will get back to you soon.');
 });
 
 
